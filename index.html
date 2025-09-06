@@ -1,14 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 - Dynamic Web Fundamentals - Anna Karpova de Nuñez</title>
+    <meta name="description"
+        content="Anna Karpova's index page for the BYU-Idaho WDD 131 - Dynamic Web Fundamentals course.">
+    <meta name="author" content="Anna Karpova de Nuñez">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 - Anna Karpova de Nuñez</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/anna-karpova-b8553894/" title="LinkedIn" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" title="Canvas" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/19?lang=eng&id=p23#p23"
+                title="Scripture" target="_blank">Scripture</a>
+            <a href="#" title="Final Project" target="_blank">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Anna Karpova de Nuñez</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <!--p>Hello! My name is Anna Karpova de Nuñez, and I am from Lima, Perú. I enjoy playing volleyball,
+                    growing
+                    plants, listening to music, and cooking. My hobby is embroidering in cross-stitch because it is easy
+                    and
+                    relaxing.</p>
+                <img src="images/profile1.png" alt="Hello, my name is Anna Karpova de Nuñez"-->
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <p>Hello! My name is Anna Karpova de Nuñez, and I am from Lima, Perú. I enjoy playing
+                            volleyball,
+                            growing
+                            plants, listening to music, and cooking. My hobby is embroidering in cross-stitch because it
+                            is easy
+                            and
+                            relaxing.</p>
+                    </div>
+                    <div class="profile-image">
+                        <img src="images/profile.png" alt="RHello, my name is Anna Karpova de Nuñez">
+                    </div>
+                </div>
+                <div class="location-section">
+                    <h2 class="location-title">Lima, Perú</h2>
+
+                    <div class="location-content">
+                        <div class="img-section">
+                            <img src="images/machupicchu.jpg" alt="Machu Picchu landscape">
+                            <p class="img-caption">Machu Picchu</p>
+                        </div>
+
+                        <div class="location-text">
+                            <p>Machu Picchu is an Inca citadel located high in the Andes Mountains in Peru, above the
+                                Urubamba River
+                                Valley.
+                                Built in the 15th century and later abandoned, it is famous for its sophisticated
+                                dry-stone walls, which
+                                combine enormous blocks without mortar; its fascinating buildings linked to astronomical
+                                alignments; and
+                                its
+                                panoramic views.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="card-content">
+                <ul class="custom-bullets">
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                    <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🇵🇪 🌄 🍲 Anna Karpova de Nuñez 🍲 🌄 🇵🇪 Lima, Perú</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
