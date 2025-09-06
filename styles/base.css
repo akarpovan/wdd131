@@ -179,7 +179,7 @@ main h1 {
     justify-content: center;
     /* Horizontal center*/
     min-height: 400px;
-    margin-left: 0.5 rem;
+    margin-left: 0.5rem;
     /*----*/
     flex-direction: column;
     text-align: center;
