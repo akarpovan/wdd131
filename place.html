@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="author" content="Anna Karpova" />
+    <meta name="description" content="Country page or place where I live, have visited, or wish to visit." />
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="flag-peru">
+                <div class="bar bar-red"></div>
+                <div class="bar bar-white"></div>
+                <div class="bar bar-red"></div>
+            </div>
+            <div class="header-content">
+                <h1><span>Perú</span></h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <section class="hero-section">
+                <picture>
+                    <source srcset="images/machupicchu-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/machupicchu-medium.webp" media="(min-width: 500px)">
+                    <img src="images/machupicchu-small.webp" alt="Panoramic view of Machu Picchu" width="500"
+                        height="250" class="hero-image">
+                    <!--source srcset="https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&w=1000&q=80" media="(min-width: 1000px)">
+                    <source srcset="https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&w=700&q=80" media="(min-width: 500px)">
+                    <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&w=500&q=80" alt="Panoramic view of Machu Picchu" class="hero-image"-->
+                </picture>
+            </section>
+
+            <section class="data-section">
+                <h2>Data</h2>
+                <div class="data-grid">
+                    <div class="data-item">
+                        <span class="data-label">Area:</span>
+                        <span class="data-value">1,285,216 sq km</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Population:</span>
+                        <span class="data-value">34,621,744</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Capital:</span>
+                        <span class="data-value">Lima</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Languages:</span>
+                        <span class="data-value">Spanish, Quechua, Aymara</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Currency:</span>
+                        <span class="data-value">Peruvian Sol (PEN)</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Time Zone:</span>
+                        <span class="data-value">UTC-5</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Calling Code:</span>
+                        <span class="data-value">+51</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Internet TLD:</span>
+                        <span class="data-value">.pe</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="weather-section">
+                <h2>Weather</h2>
+                <svg class="weather-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path class="detalle-path" fill="currentColor"
+                        d="M6,8A6,6 0 0,1 12,2A6,6 0 0,1 18,8C18,11.31 15.31,14 12,14C8.69,14 6,11.31 6,8M4,16A1,1 0 0,1 5,17H19A1,1 0 0,1 20,16A1,1 0 0,1 21,17A1,1 0 0,1 20,18H5A1,1 0 0,1 4,17A1,1 0 0,1 5,16A1,1 0 0,1 4,16M5,19H19A1,1 0 0,1 20,20A1,1 0 0,1 19,21H5A1,1 0 0,1 4,20A1,1 0 0,1 5,19M5,22H19A1,1 0 0,1 20,23A1,1 0 0,1 19,24H5A1,1 0 0,1 4,23A1,1 0 0,1 5,22Z" />
+                </svg>
+                <div class="data-grid">
+                    <div class="data-item">
+                        <span class="data-label">Temperature:</span>
+                        <span class="data-value" id="temperature">10°C</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Conditions:</span>
+                        <span class="data-value">Partly Cloudy</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Wind:</span>
+                        <span class="data-value" id="wind-speed">5 km/h</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Wind Chill:</span>
+                        <span class="data-value" id="wind-chill">N/A</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🇵🇪 🌄 🍲 Anna Karpova de Nuñez 🍲 🌄 🇵🇪 Lima, Perú</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
