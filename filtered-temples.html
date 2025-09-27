@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temple Album Activity </title>
+    <meta name="description"
+        content="This assignment applies the concepts presented in the learning activities to a picture album page that is responsive in small and larger views.">
+    <meta name="author" content="Anna Karpova de Nuñez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active" id="temples-all">Home</a></li>
+                <li><a href="#" id="temples-old">Old</a></li>
+                <li><a href="#" id="temples-new">New</a></li>
+                <li><a href="#" id="temples-large">Large</a></li>
+                <li><a href="#" id="temples-small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>HOME</h2>
+        <div class="container">
+            <!-- Temple cards will be generated here by JavaScript -->
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🇵🇪 🌄 🍲 Anna Karpova de Nuñez 🍲 🌄 🇵🇪 Lima, Perú</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
