@@ -1,12 +1,17 @@
-/* Simple CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather', serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
