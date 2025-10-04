@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 - Dynamic Web Fundamentals - Anna Karpova de Nuñez</title>
+    <meta name="description"
+        content="Anna Karpova's site plan page for the BYU-Idaho WDD 131 - Dynamic Web Fundamentals course.">
+    <meta name="author" content="Anna Karpova de Nuñez">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">BasicSpend Site Plan</div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" class="active" id="expenses-home">Home</a></li>
+                    <li><a href="#" id="expenses-add">Add Expense</a></li>
+                    <li><a href="#" id="expenses-view">View Expenses</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section id="site-name">
+            <h2>1. Site Name</h2>
+            <p class="bold">BasicSpend - A Basic Personal Expense Tracker.</p>
+            <p>I chose this name because it clearly communicates the purpose of site. The name suggests that the tool is
+                intuitive and easy to use for managing personal finances.</p>
+            <p class="italic">Optional domain availability: basicspend.com</p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>2. Site Purpose</h2>
+            <p>The BasicSpend website will provide a basic tool for expense control. It would be an easy-to-use tool for
+                managing your daily expenses and understanding your spending habits. The website will offer:
+            </p>
+            <ul>
+                <li>Easy expense entry and categorization</li>
+                <li>Monthly and yearly spending overviews</li>
+                <li>Data persistence using localStorage</li>
+                <li>Mobile-responsive design</li>
+                <li>Expense filtering and search options</li>
+            </ul>
+        </section>
+
+        <section id="scenarios">
+            <h2>3. Scenarios</h2>
+            <p>These questions represent what target users might ask when visiting the site:</p>
+            <h3>Scenario 1:</h3>
+            <p class="bold">The question is from a family member:</p>
+            <p class="italic">Our family needs to track shared expenses and set monthly budgets. Is there a tool that
+                doesn't require creating an account but still saves our data?</p>
+            <p class="bold">Answer:</p>
+            <p>LocalStorage functionality preserves data across browser sessions
+                without requiring user registration.</p>
+
+            <h3>Scenario 2:</h3>
+            <p class="bold">TThe question is from a young professional:</p>
+            <p class="italic">I just started my first job and want to create better financial habits. Can I quickly add
+                expenses
+                from my phone and see my spending patterns over time?</p>
+            <p class="bold">Answer:</p>
+            <p>The mobile-responsive design makes it easy to record expenses anywhere.</p>
+        </section>
+
+        <section id="color-schema">
+            <h2>4. Color Schema</h2>
+
+            <div class="color-schema primary-color">
+                Primary Color: #3498db (Blue)<br>
+                Usage: Main headers, primary buttons, navigation elements
+            </div>
+
+            <div class="color-schema secondary-color">
+                Secondary Color: #2ecc71 (Green)<br>
+                Usage: Success messages, positive financial indicators, action confirmations
+            </div>
+
+            <div class="color-schema accent-color">
+                Accent Color: #e74c3c (Red)<br>
+                Usage: Warning messages, delete actions, negative financial indicators
+            </div>
+
+            <div class="color-schema dark-color">
+                Dark Color: #2c3e50 (Dark Blue)<br>
+                Usage: Body text, secondary navigation
+            </div>
+
+            <div class="light-gray">
+                Light Color: #ecf0f1 (Light Gray)<br>
+                Usage: Backgrounds, section alternates
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>5. Typography</h2>
+
+            <h3>Primary Font Family: "Merriweather Sans", sans-serif</h3>
+
+            <ul>
+                <li><span class="bold">Main Headers (h1):</span> Merriweather Sans, Bold, 2.5rem, #3498db</li>
+                <li><span class="bold">Section Headers (h2):</span> Merriweather Sans, Semi-bold, 1.8rem, #2c3e50 with
+                    blue
+                    background
+                </li>
+                <li><span class="bold">Subheaders (h3): </span>Merriweather Sans, Semi-bold, 1.4rem, #2c3e50</li>
+                <li><span class="bold">Body Text: </span>Merriweather Sans, Regular, 1rem, #333333</li>
+                <li><span class="bold">Buttons: </span>Merriweather Sans, Semi-bold, 1rem</li>
+                <li><span class="bold">Labels & Small Text: </span>Merriweather Sans, Regular, 0.9rem, #666666</li>
+            </ul>
+        </section>
+
+        <section id="wireframe">
+            <h2>6. Wireframe</h2>
+
+            <h3>Mobile View (320px - 768px)</h3>
+            <div class="wireframe">
+                <pre>
+┌─────────────────────────────────────┐
+│ BASICSPEND (Logo)          [Menu ≡] │
+├─────────────────────────────────────┤
+│ [Actual month] [Actual year]        │
+├─────────────────────────────────────┤
+│ This Month's Spending               │ 
+│ ████████████████████████████ $450   │
+│                                     │
+├─────────────────────────────────────┤
+| Category:                           │
+│                                     │ 
+│ Food: $200          ████████ 40%    │
+│ Transport: $150     ██████   30%    │
+│ Entertainment: $100 ████     20%    │
+├─────────────────────────────────────┤
+│ Recent Transactions:                │
+│ • Jan 15 - Food - $25 ✓             │
+│ • Jan 14 - Transport - $15 ✓        │
+│ • Jan 13 - Food - $40 ✓             │
+├─────────────────────────────────────┤
+                </pre>
+            </div>
+
+            <h3>Desktop View (1200px+)</h3>
+            <div class="wireframe">
+                <pre>
+┌─────────────────────────────────────────────────────────┐
+│ BASICSPEND            Home  Add Expense  View Expenses  │
+├─────────────────┬─────────────────────┬─────────────────┤
+│ [Actual month]  │    [Actual year]    │ Total: $450     │
+├─────────────────┼─────────────────────┼─────────────────┤
+│  Category:                            │  Category       │  
+│  Food ████████ 40%                    │  images         │
+│  Transport ██████ 30%                 │                 │
+│  Entertainment ████ 20%               │                 │
+├─────────────────┼─────────────────────┼─────────────────┤
+│ Recent Transactions:                  │ Monthly Summary │
+│ • Jan 15 - Food $25 ✓                 │ Budget: $500    │
+│ • Jan 14 Transport $15✓               │ Remaining: $50  │
+│ • Jan 13 - Food $40 ✓                 │                 │
+└─────────────────┴─────────────────────┴─────────────────┘
+                </pre>
+            </div>
+
+            <h3>Page Structure Overview:</h3>
+            <ul>
+                <li><span class="bold">Home:</span> Monthly overview with recent transactions</li>
+                <li><span class="bold">Add Expense:</span> Simple form for entering new expenses</li>
+                <li><span class="bold">View Expenses:</span> Comprehensive list with filtering options</li>
+                <li><span class="bold">Common Elements:</span> Consistent header navigation and footer across all pages
+                </li>
+            </ul>
+        </section>
+
+        <section id="navigation">
+            <h2>7. Site Navigation</h2>
+            <ul>
+                <li><span class="bold">Header Navigation:</span> Logo + Links (Home, Add Expense, View Expenses)</li>
+                <li><span class="bold">Mobile Menu:</span> Hamburger menu that expands to show navigation options</li>
+                <li><span class="bold">Filter Navigation:</span> Month/Year selectors and category filters</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>©<span id="currentyear"></span> 🇵🇪 🌄 🍲 Anna Karpova de Nuñez 🍲 🌄 🇵🇪 Lima, Perú</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
